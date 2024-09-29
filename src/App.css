@@ -1,4 +1,33 @@
 *{
   padding: 0;
   margin: 0;
+
+}
+body{
+  background-color: #EFEFEF;
+}
+   
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #40250a; /* color of the scrollbar handle */
+  border-radius: 6px; /* roundness of the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scrollbar handle on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #40250a #f1f1f1;
 }

@@ -23,13 +23,18 @@ function Gotop() {
                 height: "50px",
                 borderRadius: "50%",
                 color: "white",
-                backgroundColor: "#00cbcb",
-                display: show ? "flex" : "none",
+                backgroundColor: "#9f5204",
+                display: "flex",
+                opacity: show ? "1" : "0",
                 justifyContent: "center",
                 alignItems: "center",
                 position: "fixed",
                 bottom: "50px",
-                right: "50px"
+                right: "50px",
+                transition:"0.5s",
+                '&:hover': {
+                    backgroundColor: "#b25f0c"
+                }
             }} >
                 <KeyboardArrowUpIcon />
             </Box>

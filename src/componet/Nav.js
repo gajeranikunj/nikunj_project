@@ -10,23 +10,33 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
 
-const pages = ['HOME', 'MENU', 'BLOG', 'GALLERY', 'CONTACT'];
+const pages = [
+    { name: 'HOME', path: '/' },
+    { name: 'MENU', path: '/menu' },
+    { name: 'BLOG', path: '/blog' },
+    { name: 'GALLERY', path: '/GALLERY' },
+    { name: 'CONTACT', path: '/contact' }
+];
 
 function Nav() {
     const [anchorElNav, setAnchorElNav] = useState(null);
     const [anchorElUser, setAnchorElUser] = useState(null);
 
 
-    const [Ccolor, setCcolor] = useState((window.scrollY + window.innerHeight - 700 > window.innerHeight));
+
+    const [Ccolor, setCcolor] = useState((window.scrollY + window.innerHeight - 300 > window.innerHeight));
     window.addEventListener("scroll", () => {
-        if (window.scrollY + window.innerHeight - 700 > window.innerHeight) {
+        if (window.scrollY + window.innerHeight - 300 > window.innerHeight) {
             setCcolor(true);
         } else {
             setCcolor(false);
         }
     });
+
+
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -41,13 +51,9 @@ function Nav() {
     };
 
 
-
-
-
-
     return (
         <Box sx={{
-            position: "sticky",
+            position: "fixed",
             left: "0",
             top: "10px",
             width: "100%",
@@ -60,7 +66,7 @@ function Nav() {
                     position: "relative",
                     borderRadius: "50px",
                     justifyContent: "space-between",
-                    background: Ccolor ? "rgba(0, 0, 0, 0.25);" : "rgba(255, 255, 255, 0.25);",
+                    background: "#40250a",
                     backdropFilter: "blur( 14.5px );",
                     WebkitBackdropFilter: "blur( 14.5px );",
                     border: "1px solid rgba( 255, 255, 255, 0.18 );"
@@ -68,7 +74,7 @@ function Nav() {
                     <Container maxWidth="xl">
                         <Toolbar disableGutters>
                             <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}>
-                                <img src="./img/logo.png" alt="Logo" width="150px" />
+                                <img src="./img/logo5.png" alt="Logo" width={"50px"} />
                             </Box>
                             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                                 <IconButton
@@ -83,7 +89,7 @@ function Nav() {
                                     <MenuIcon sx={{ color: "#D4B26A" }} />
                                 </IconButton>
                                 <Box sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1, width: "100px" }}>
-                                    <img src="./img/logo.png" alt="Logo" style={{ margin: "auto", width: "150px" }} />
+                                    <img src="./img/logo5.png" alt="Logo" style={{ margin: "auto", width: "50px" }} />
                                 </Box>
                                 <Menu
                                     id="menu-appbar"
@@ -96,51 +102,58 @@ function Nav() {
                                     sx={{ display: { xs: 'block', md: 'none' } }}
                                 >
                                     {pages.map((page) => (
-                                        <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                            <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                                        </MenuItem>
+                                        <Link to={page.path} style={{ textDecoration: "none" }} key={page.name}>
+                                            <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                                                <Typography sx={{ textAlign: 'center', color: "#40250a" }}>{page.name}</Typography>
+                                            </MenuItem>
+                                        </Link>
                                     ))}
                                 </Menu>
                             </Box>
 
                             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "space-evenly" }}>
                                 {pages.map((page) => (
-                                    <Button
-                                        key={page}
-                                        onClick={handleCloseNavMenu}
-                                        sx={{
-                                            my: 2,
-                                            color: 'white', display: 'block',
-                                        }}
+                                    <Link to={page.path}
+                                        key={page.name}
+                                        style={{ textDecoration: "none" }}
                                     >
-                                        {page}
-                                    </Button>
+                                        <Button
+                                            onClick={handleCloseNavMenu}
+                                            sx={{
+                                                my: 2,
+                                                color: 'white', display: 'block',
+                                            }}
+                                        >
+                                            {page.name}
+                                        </Button>
+                                    </Link>
                                 ))}
                             </Box>
 
                             <Box sx={{ flexGrow: 0 }}>
                                 <Tooltip title="Open settings">
-                                    <Button
-                                        onClick={handleOpenUserMenu}
-                                        sx={{
-                                            color: "white",
-                                            padding: { xs: "5px 10px", sm: "7px 15px" },
-                                            fontSize: { sm: "15px", xs: "10px" },
-                                            backgroundColor: "#CA8E46",
-                                            '&:hover': {
-                                                backgroundColor: "#B77A3E"
-                                            }
-                                        }}
-                                    >
-                                        RESERVATION
-                                    </Button>
+                                    <Link to={"/RESERVATION"}>
+                                        <Button
+                                            onClick={handleOpenUserMenu}
+                                            sx={{
+                                                color: "white",
+                                                padding: { xs: "5px 10px", sm: "7px 15px" },
+                                                fontSize: { sm: "15px", xs: "10px" },
+                                                backgroundColor: "#9f5204",
+                                                '&:hover': {
+                                                    backgroundColor: "#b25f0c"
+                                                }
+                                            }}
+                                        >
+                                            RESERVATION
+                                        </Button>
+                                    </Link>
                                 </Tooltip>
                             </Box>
                         </Toolbar>
                     </Container>
                 </AppBar >
             </Container>
-
         </Box >
     );
 }
