@@ -8,7 +8,7 @@ function GALLERY() {
     window.scrollTo({ top: 0, behavior: "instant" });
 
     const images = [
-        "https://img.jamieoliver.com/jamieoliver/recipe-database/oldImages/large/1447_2_1427807210.jpg?tr=w-800,h-800",
+        "https://static.vecteezy.com/system/resources/previews/027/536/411/large_2x/delicious-french-fries-on-a-white-background-photo.jpg",
         "https://cdn.pixabay.com/photo/2024/04/06/04/15/ai-generated-8678599_960_720.jpg",
         "https://images.themodernproper.com/billowy-turkey/production/posts/2022/Homemade-French-Fries_8.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1662474181&s=3b2f5e70873746d98cd312c67bc50bfe",
         "https://avatars.mds.yandex.net/i?id=0f7065b513af6737226a3d0c085a97bd92da67db-8174067-images-thumbs&n=13",
