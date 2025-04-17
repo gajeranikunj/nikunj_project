@@ -89,7 +89,7 @@ function Nav() {
                                     <MenuIcon sx={{ color: "#D4B26A" }} />
                                 </IconButton>
                                 <Box sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1, width: "100px" }}>
-                                    <img src="./img/logo5.png" alt="Logo" style={{ margin: "auto", width: "50px" }} />
+                                    <img src="./img/logo.png" alt="Logo" style={{ margin: "auto", width: "50px" }} />
                                 </Box>
                                 <Menu
                                     id="menu-appbar"
