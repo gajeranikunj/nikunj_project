@@ -10,13 +10,13 @@ function GALLERY() {
     const images = [
         "https://static.vecteezy.com/system/resources/previews/027/536/411/large_2x/delicious-french-fries-on-a-white-background-photo.jpg",
         "https://cdn.pixabay.com/photo/2024/04/06/04/15/ai-generated-8678599_960_720.jpg",
-        "https://images.themodernproper.com/billowy-turkey/production/posts/2022/Homemade-French-Fries_8.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1662474181&s=3b2f5e70873746d98cd312c67bc50bfe",
+        "https://static.vecteezy.com/system/resources/previews/060/191/777/non_2x/vibrant-indian-street-food-samosas-and-spicy-chutneys-for-festive-culinary-delights-photo.jpg",
         "https://avatars.mds.yandex.net/i?id=0f7065b513af6737226a3d0c085a97bd92da67db-8174067-images-thumbs&n=13",
         "https://i.pinimg.com/originals/c2/82/01/c2820130d15be5669e6258d5bf83212b.jpg",
         "https://images.deliveryhero.io/image/fd-my/LH/xpk2-hero.jpg",
         "https://yandex-images.clstorage.net/gl4nj9248/25cddbwAp-aX/TGzCdiiuU2aYzbJETmAxzOPnmwC0iQy1ca43oarxAkLiVw6iPchjprRoMiOApHCfv19WwxCdDxyGWQAt8UKyolioBjKJa-ai2QjyxH4wEBk31orFFMzdEVSbx9HcYrXF4DTpASpKdCFQeDe2sMDh-uq6tWXB_a85dr2jeESWZLXdnJGlPtxAp4z9Emb9cCPIMRb5NTSuToSWnqGEb1HnhqNVqRIb6XbR0zi1d8PzxkroivZUhQwfuYVNUhik1qSlf55Qx0w88FSujxNkbjJyKUNVuGdEvg9EJk9wRc0CNSewNkjROuq3kcHbd4QRw3SZmsqHFNSOTAmH70LqpUWlVE1MU2Zu_JAWnG1z9g9gMRiwVXilF12NRkSfsdQPINe2cHaKsDhLVfDR2RV0wxBkW3qJFNdHrgzplWyyGbbEd4UML7Nlb3zyNI0tM_aPgFHJUmSoFwSPzwSlDqNEXeOG5JOWe5GYGkSjA_jnx8OxFGgratbmpc_f65RtQeqGlUVkb7-h9y_uwdW-HvEmbzMj2hAEWAY1jp0HJB5gBK7S1MeRhVmiO5q3sZJ5JzXiQYQb2DrnlaVvnYj2r2ILxVTVRa4egCVcHLNFHsxyFv0jUzqzNLs2tqyedCf_MiZvoeXGoAQ7Qnu7pBPQyQY0oFOV-9ootFZ2fa87x26jO6d0p7VNP4AHf3_Rl14McCXMErDKkqa6VybevPcGn0FkTUDEl2MmKyI663TDoYgUBIGzhHhquyU0JQ8ceEcMQyv1ROWGPo_xto7ec_TdvrNXDGNCihOXKMZWbW1GBoyjVDzAJtVAR8sxikjXwDB6BhSwUQW6ShhF5WeML8v3HyMYNcRXxl0cYSVsD6AGnK8g5o1A49tRtblXFPx-h9a-QZR-EYdncqRZMvqK5cLy-LekwOLHmnk41NUW3N5aRN8yGrVHZscvbjElfuyyhP0fIPZsMIEbc1UIVFV93XUkLAO2E",
         "https://as2.ftcdn.net/v2/jpg/02/09/33/37/1000_F_209333738_dePp9zEjyxAOaYhph4G8n7XkSU8CGgAk.jpg",
-        "https://i0.wp.com/healthyliving.natureloc.com/wp-content/uploads/2018/01/prawn-curry-recipe-natureloc2.jpg",
+        "https://static.vecteezy.com/system/resources/previews/024/073/305/non_2x/traditional-nasi-lemak-dish-served-on-a-banana-leaf-ai-generative-photo.jpg",
         "https://lossaboresdemexico.com/wp-content/uploads/2016/09/Cacerola-de-huevos-y-papas-picante.jpg",
         "https://i.pinimg.com/736x/ac/c6/3e/acc63e6a6682a99fb35de7ee5eb5682e.jpg"
     ];
