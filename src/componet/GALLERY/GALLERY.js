@@ -22,7 +22,7 @@ function GALLERY() {
     ];
 
     const restaurantNames = [
-        "chinese samosa", "jumbo sandwich", "french fries", "samosa", "Aloo gobhi", "Nasi lemak", "Tajine", "Recipe Jalbiteworldfood",
+        "french fries","jumbo sandwich", "chinese samosa", "samosa", "Aloo gobhi", "Nasi lemak", "Tajine", "Recipe Jalbiteworldfood",
         "Shrimp curry", "Shakshouka", "Kaju Paneer Masala"
     ];
 
